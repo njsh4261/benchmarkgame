@@ -1,0 +1,14 @@
+
+Sat, 05 Sep 2020 12:23:52 GMT
+
+MAKE:
+gcc -pipe -Wall -O3 -fomit-frame-pointer  printf.c -o printf.gcc_run
+rm printf.c
+
+0.13s to complete and log all make actions
+
+COMMAND LINE:
+./printf.gcc_run
+
+PROGRAM OUTPUT:
+Hey there!

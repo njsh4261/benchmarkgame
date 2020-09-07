@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,follow,noarchive">
+
+<title>mandelbrot C++ g++&nbsp;#3 program | Q6600 Benchmarks Game </title>
+<link href="../program.css" rel = "stylesheet" type = "text/css" >
+<link rel="shortcut icon" href="../favicon.ico">
+<header>
+  <h3><a href="https://benchmarksgame-team.pages.debian.net/benchmarksgame/q6600/">The&nbsp;Q6600<br>Benchmarks&nbsp;Game</a></h3>
+</header>
+<article>
+  <div>
+    <h1>mandelbrot C++ g++&nbsp;#3 program</h1>
+    <aside>
+      <p><a href="../description/mandelbrot.html#mandelbrot">description</a>
+    </aside>
+  </div>
+  <section>
+    <div>
+      <h2>source code</h2>
+    </div>
+    <pre>
+<span class="com">/* The Computer Language Benchmarks Game</span>
+<span class="com">   https://salsa.debian.org/benchmarksgame-team/benchmarksgame/</span>
+<span class="com">   contributed by Greg Buchholz</span>
+<span class="com">   compile:  g++ -O3</span>
+<span class="com">*/</span>
+
+<span class="ppc">#include &lt;stdio.h&gt;</span>
+<span class="ppc">#include &lt;stdlib.h&gt;</span>
+<span class="ppc">#include&lt;iostream&gt;</span>
+<span class="ppc">#include&lt;complex&gt;</span>
+
+<span class="kwb">int</span> <span class="kwd">main</span> <span class="opt">(</span><span class="kwb">int</span> argc<span class="opt">,</span> <span class="kwb">char</span> <span class="opt">**</span>argv<span class="opt">)</span>
+<span class="opt">{</span>
+  <span class="kwb">char</span>  bit_num <span class="opt">=</span> <span class="num">0</span><span class="opt">,</span> byte_acc <span class="opt">=</span> <span class="num">0</span><span class="opt">;</span>
+  <span class="kwb">const int</span> iter <span class="opt">=</span> <span class="num">50</span><span class="opt">;</span>
+  <span class="kwb">const double</span> lim <span class="opt">=</span> <span class="num">2.0</span> <span class="opt">*</span> <span class="num">2.0</span><span class="opt">;</span>
+  
+  <span class="kwc">std</span><span class="opt">::</span><span class="kwc">ios_base</span><span class="opt">::</span><span class="kwd">sync_with_stdio</span><span class="opt">(</span><span class="kwa">false</span><span class="opt">);</span>
+  <span class="kwb">int</span> n <span class="opt">=</span> <span class="kwd">atoi</span><span class="opt">(</span>argv<span class="opt">[</span><span class="num">1</span><span class="opt">]);</span>
+
+  <span class="kwc">std</span><span class="opt">::</span>cout <span class="opt">&lt;&lt;</span> <span class="str">&quot;P4</span><span class="esc">\n</span><span class="str">&quot;</span> <span class="opt">&lt;&lt;</span> n <span class="opt">&lt;&lt;</span> <span class="str">&quot; &quot;</span> <span class="opt">&lt;&lt;</span> n <span class="opt">&lt;&lt;</span> <span class="kwc">std</span><span class="opt">::</span>endl<span class="opt">;</span>
+
+  <span class="kwa">for</span><span class="opt">(</span><span class="kwb">int</span> y<span class="opt">=</span><span class="num">0</span><span class="opt">;</span> y<span class="opt">&lt;</span>n<span class="opt">; ++</span>y<span class="opt">)</span> 
+    <span class="kwa">for</span><span class="opt">(</span><span class="kwb">int</span> x<span class="opt">=</span><span class="num">0</span><span class="opt">;</span> x<span class="opt">&lt;</span>n<span class="opt">; ++</span>x<span class="opt">)</span>
+    <span class="opt">{</span>
+       <span class="kwc">std</span><span class="opt">::</span><span class="kwb">complex</span><span class="opt">&lt;</span><span class="kwb">double</span><span class="opt">&gt;</span> <span class="kwd">Z</span><span class="opt">(</span><span class="num">0</span><span class="opt">,</span><span class="num">0</span><span class="opt">),</span><span class="kwd">C</span><span class="opt">(</span><span class="num">2</span><span class="opt">*(</span><span class="kwb">double</span><span class="opt">)</span>x<span class="opt">/</span>n <span class="opt">-</span> <span class="num">1.5</span><span class="opt">,</span> <span class="num">2</span><span class="opt">*(</span><span class="kwb">double</span><span class="opt">)</span>y<span class="opt">/</span>n <span class="opt">-</span> <span class="num">1.0</span><span class="opt">);</span>
+       
+       <span class="slc">//manually inlining &quot;norm&quot; results in a 5x-7x speedup on gcc</span>
+       <span class="kwa">for</span><span class="opt">(</span><span class="kwb">int</span> i<span class="opt">=</span><span class="num">0</span><span class="opt">;</span> i<span class="opt">&lt;</span>iter <span class="kwa">and</span> Z<span class="opt">.</span><span class="kwd">real</span><span class="opt">()*</span>Z<span class="opt">.</span><span class="kwd">real</span><span class="opt">() +</span> Z<span class="opt">.</span><span class="kwd">imag</span><span class="opt">()*</span>Z<span class="opt">.</span><span class="kwd">imag</span><span class="opt">() &lt;=</span> lim<span class="opt">; ++</span>i<span class="opt">)</span>
+         Z <span class="opt">=</span> Z<span class="opt">*</span>Z <span class="opt">+</span> C<span class="opt">;</span>
+        
+       byte_acc <span class="opt">= (</span>byte_acc <span class="opt">&lt;&lt;</span> <span class="num">1</span><span class="opt">) | ((</span><span class="kwd">norm</span><span class="opt">(</span>Z<span class="opt">) &gt;</span> lim<span class="opt">) ?</span> <span class="num">0x00</span><span class="opt">:</span><span class="num">0x01</span><span class="opt">);</span>
+
+       <span class="kwa">if</span><span class="opt">(++</span>bit_num <span class="opt">==</span> <span class="num">8</span><span class="opt">){</span> <span class="kwc">std</span><span class="opt">::</span>cout <span class="opt">&lt;&lt;</span> byte_acc<span class="opt">;</span> bit_num <span class="opt">=</span> byte_acc <span class="opt">=</span> <span class="num">0</span><span class="opt">; }</span>
+       <span class="kwa">else if</span><span class="opt">(</span>x <span class="opt">==</span> n<span class="opt">-</span><span class="num">1</span><span class="opt">) {</span> byte_acc  <span class="opt">&lt;&lt;= (</span><span class="num">8</span><span class="opt">-</span>n<span class="opt">%</span><span class="num">8</span><span class="opt">);</span>
+                           <span class="kwc">std</span><span class="opt">::</span>cout <span class="opt">&lt;&lt;</span> byte_acc<span class="opt">;</span>
+                           bit_num <span class="opt">=</span> byte_acc <span class="opt">=</span> <span class="num">0</span><span class="opt">; }</span>
+    <span class="opt">}</span>
+<span class="opt">}</span>
+    </pre>
+  </section>
+  <section>
+    <div>
+      <h2 id="log">notes, command-line, and program output</h2>
+    </div>
+    <pre>
+NOTES:
+64-bit Ubuntu quad core
+g++ (Ubuntu 9.3.0-10ubuntu2) 9.3.0
+
+
+Mon, 04 May 2020 18:36:21 GMT
+
+MAKE:
+/usr/bin/g++ -c -pipe -O3 -fomit-frame-pointer -march=core2   mandelbrot.gpp-3.c++ -o mandelbrot.gpp-3.c++.o &amp;&amp;  \
+        /usr/bin/g++ mandelbrot.gpp-3.c++.o -o mandelbrot.gpp-3.gpp_run  
+rm mandelbrot.gpp-3.c++
+
+5.18s to complete and log all make actions
+
+COMMAND LINE:
+./mandelbrot.gpp-3.gpp_run 16000
+
+(BINARY) PROGRAM OUTPUT NOT SHOWN
+    </pre>
+  </section>
+</article>
+<footer>
+  <nav>
+    <ul>
+      <li><a href="https://salsa.debian.org/benchmarksgame-team/benchmarksgame/blob/master/CONTRIBUTING.md#contribute-source-code-for-measurement"><span>Contribute your own program</span></a>
+      <li><a href="../../license.html"><span>3-Clause BSD License</span></a>
+    </ul>
+  </nav>
+</footer>
+

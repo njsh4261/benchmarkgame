@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="all" />
+<meta name="description" content="Swift Rust - Which programs are fastest?" />
+<title>Swift&nbsp;vs&nbsp;Rust - Which programs are fastest? | Computer Language Benchmarks Game </title>
+<style><!--
+a{color:black;text-decoration:none}article,footer{padding:0 0 2.9em}article,div,footer,header{margin:auto;width:92%}body{font:100% Droid Sans, Ubuntu, Verdana, sans-serif;margin:0;-webkit-text-size-adjust:100%}h3, h1, h2, nav li a{font-family:Ubuntu Mono,Consolas,Menlo,monospace}div,footer,header{max-width:31em}h3{font-size:1.4em;font-weight:bold;margin:0;padding: .4em}h3, h3 a{color:white;background-color:#77216f}h3 small{font-size:0.64em}h1,h2{margin:1.5em 0 0}h1{font-size:1.4em;font-weight:normal}h2{font-size:1.2em}li{display:inline-block}nav li{list-style-type:none}nav li a{display:block;font-size:1.2em;margin: .5em .5em 0;padding: .5em .5em .3em}nav ul{clear:left;margin:-0.3em 0 1.5em;padding-left:0;text-align:center}p{color:#333;line-height:1.4;margin: .3em 0 0}p a,span{border-bottom: .1em solid #333;padding-bottom: .1em}.best{font-weight:bold}.message{font-size: .8em}table{color:#333;margin:1.3em auto 0;text-align:right}tbody::after{content:"-";display:block;line-height:2.6em;visibility:hidden}tbody:last-child{text-align:left}td{border-bottom: .15em dotted #eee;padding: .7em 0 0 1em}td a, th a{display:block}td:first-child,th:first-child{text-align:left;padding-left:0}td:nth-child(6),th:nth-child(6){display:table-cell}th{font-weight:normal;padding: .7em 0 0 1em}@media only screen{th:nth-child(3),td:nth-child(3),th:nth-child(4),td:nth-child(4),th:nth-child(5),td:nth-child(5),th:nth-child(6),td:nth-child(6){display:none}h2::after{content:" (too narrow: mem, gz, cpu, cpu-load columns are hidden)";font-weight:normal;font-size: .9em}}@media only screen and (min-width: 28em){th:nth-child(3),td:nth-child(3),th:nth-child(4),td:nth-child(4),th:nth-child(5),td:nth-child(5){display:table-cell}h2::after{content:" (cpu-load column is hidden)"}}@media only screen and (min-width: 41em){th:nth-child(6),td:nth-child(6){display:table-cell}h2::after{display:none}}@media only screen and (min-width: 60em){article,footer,header{font-size:1.25em}}
+--></style>
+<link rel="shortcut icon" href="./favicon.ico">
+<header>
+  <h3><a href="https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html">The&nbsp;<small>Computer&nbsp;Language</small><br>Benchmarks&nbsp;Game</a></h3>
+</header>
+<article>
+  <div>
+    <h1>Swift versus Rust fastest programs</h1>
+    <aside>
+
+    <nav>
+      <ul>
+        <li><a href="../fastest/swift-gcc.html"><span>vs C</span></a>
+        <li><a href="../fastest/swift-gpp.html"><span>vs C++</span></a>
+        <li><a href="../fastest/swift-go.html"><span>vs Go</span></a>
+        <li><a href="../fastest/swift.html"><span>vs Java</span></a>
+        <li class="best">vs Rust
+      </ul>
+    </nav>
+    </aside> 
+  </div>
+  <section>
+    <div>
+        <p>Always look at the source code.
+        <p>These are only the fastest programs. Look at the other programs. They may seem more-like a <em>fair</em> comparison to you.
+      <h2></h2>
+    </div>
+    <table>
+      <tbody>
+      <tr>
+        <th colspan="3"><a href="../performance/fannkuchredux.html"><span>fannkuch-redux</span></a>
+        <th colspan="3">
+      <tr>
+        <th>source
+        <th>secs
+        <th>mem
+        <th>gz
+        <th>busy
+        <th>cpu load
+      <tr>
+        <td><a href="../program/fannkuchredux-swift-3.html"><span>Swift</span></a>
+        <td class="best">7.46
+        <td>7,512
+        <td>1097
+        <td>29.57
+        <td class="message">100%&nbsp;98%&nbsp;98%&nbsp;100%
+      <tr>
+        <td><a href="../program/fannkuchredux-rust-5.html"><span>Rust</span></a>
+        <td>7.54
+        <td>1,012
+        <td>1016
+        <td>29.62
+        <td class="message">95%&nbsp;98%&nbsp;100%&nbsp;100%
+      <tbody>
+      <tr>
+        <th colspan="3"><a href="../performance/pidigits.html"><span>pidigits</span></a>
+        <th colspan="3">
+      <tr>
+        <th>source
+        <th>secs
+        <th>mem
+        <th>gz
+        <th>busy
+        <th>cpu load
+      <tr>
+        <td><a href="../program/pidigits-swift-2.html"><span>Swift</span></a>
+        <td>0.89
+        <td>8,484
+        <td>600
+        <td>0.90
+        <td class="message">0%&nbsp;100%&nbsp;1%&nbsp;0%
+      <tr>
+        <td><a href="../program/pidigits-rust-1.html"><span>Rust</span></a>
+        <td>0.88
+        <td>2,904
+        <td>1420
+        <td>0.90
+        <td class="message">0%&nbsp;100%&nbsp;2%&nbsp;0%
+      <tbody>
+      <tr>
+        <th colspan="3"><a href="../performance/fasta.html"><span>fasta</span></a>
+        <th colspan="3">
+      <tr>
+        <th>source
+        <th>secs
+        <th>mem
+        <th>gz
+        <th>busy
+        <th>cpu load
+      <tr>
+        <td><a href="../program/fasta-swift-3.html"><span>Swift</span></a>
+        <td>1.41
+        <td>26,372
+        <td>2090
+        <td>4.66
+        <td class="message">76%&nbsp;96%&nbsp;80%&nbsp;78%
+      <tr>
+        <td><a href="../program/fasta-rust-5.html"><span>Rust</span></a>
+        <td>0.94
+        <td>2,180
+        <td>1961
+        <td>3.12
+        <td class="message">81%&nbsp;81%&nbsp;81%&nbsp;89%
+      <tbody>
+      <tr>
+        <th colspan="3"><a href="../performance/nbody.html"><span>n-body</span></a>
+        <th colspan="3">
+      <tr>
+        <th>source
+        <th>secs
+        <th>mem
+        <th>gz
+        <th>busy
+        <th>cpu load
+      <tr>
+        <td><a href="../program/nbody-swift-4.html"><span>Swift</span></a>
+        <td>5.33
+        <td>12,352
+        <td>1355
+        <td>5.52
+        <td class="message">100%&nbsp;1%&nbsp;1%&nbsp;1%
+      <tr>
+        <td><a href="../program/nbody-rust-7.html"><span>Rust</span></a>
+        <td>3.42
+        <td>1,844
+        <td>1753
+        <td>3.44
+        <td class="message">100%&nbsp;0%&nbsp;0%&nbsp;0%
+      <tbody>
+      <tr>
+        <th colspan="3"><a href="../performance/mandelbrot.html"><span>mandelbrot</span></a>
+        <th colspan="3">
+      <tr>
+        <th>source
+        <th>secs
+        <th>mem
+        <th>gz
+        <th>busy
+        <th>cpu load
+      <tr>
+        <td><a href="../program/mandelbrot-swift-3.html"><span>Swift</span></a>
+        <td>1.77
+        <td>39,044
+        <td>1138
+        <td>7.00
+        <td class="message">99%&nbsp;100%&nbsp;99%&nbsp;99%
+      <tr>
+        <td><a href="../program/mandelbrot-rust-7.html"><span>Rust</span></a>
+        <td>0.92
+        <td>26,112
+        <td>757
+        <td>3.67
+        <td class="message">100%&nbsp;100%&nbsp;100%&nbsp;100%
+      <tbody>
+      <tr>
+        <th colspan="3"><a href="../performance/spectralnorm.html"><span>spectral-norm</span></a>
+        <th colspan="3">
+      <tr>
+        <th>source
+        <th>secs
+        <th>mem
+        <th>gz
+        <th>busy
+        <th>cpu load
+      <tr>
+        <td><a href="../program/spectralnorm-swift-3.html"><span>Swift</span></a>
+        <td>1.44
+        <td>7,932
+        <td>601
+        <td>5.72
+        <td class="message">99%&nbsp;100%&nbsp;99%&nbsp;99%
+      <tr>
+        <td><a href="../program/spectralnorm-rust-4.html"><span>Rust</span></a>
+        <td>0.72
+        <td>2,448
+        <td>817
+        <td>2.84
+        <td class="message">100%&nbsp;99%&nbsp;100%&nbsp;99%
+      <tbody>
+      <tr>
+        <th colspan="3"><a href="../performance/revcomp.html"><span>reverse-complement</span></a>
+        <th colspan="3">
+      <tr>
+        <th>source
+        <th>secs
+        <th>mem
+        <th>gz
+        <th>busy
+        <th>cpu load
+      <tr>
+        <td><a href="../program/revcomp-swift-1.html"><span>Swift</span></a>
+        <td>1.78
+        <td>733,260
+        <td>1286
+        <td>2.35
+        <td class="message">1%&nbsp;53%&nbsp;74%&nbsp;4%
+      <tr>
+        <td><a href="../program/revcomp-rust-2.html"><span>Rust</span></a>
+        <td>0.74
+        <td>994,912
+        <td>1330
+        <td>1.34
+        <td class="message">27%&nbsp;81%&nbsp;46%&nbsp;27%
+      <tbody>
+      <tr>
+        <th colspan="3"><a href="../performance/knucleotide.html"><span>k-nucleotide</span></a>
+        <th colspan="3">
+      <tr>
+        <th>source
+        <th>secs
+        <th>mem
+        <th>gz
+        <th>busy
+        <th>cpu load
+      <tr>
+        <td><a href="../program/knucleotide-swift-2.html"><span>Swift</span></a>
+        <td>14.10
+        <td>185,448
+        <td>1367
+        <td>54.12
+        <td class="message">98%&nbsp;95%&nbsp;96%&nbsp;96%
+      <tr>
+        <td><a href="../program/knucleotide-rust-7.html"><span>Rust</span></a>
+        <td>2.64
+        <td>131,408
+        <td>1578
+        <td>8.41
+        <td class="message">66%&nbsp;86%&nbsp;92%&nbsp;75%
+      <tbody>
+      <tr>
+        <th colspan="3"><a href="../performance/binarytrees.html"><span>binary-trees</span></a>
+        <th colspan="3">
+      <tr>
+        <th>source
+        <th>secs
+        <th>mem
+        <th>gz
+        <th>busy
+        <th>cpu load
+      <tr>
+        <td><a href="../program/binarytrees-swift-3.html"><span>Swift</span></a>
+        <td>15.93
+        <td>701,592
+        <td>862
+        <td>50.78
+        <td class="message">79%&nbsp;100%&nbsp;65%&nbsp;75%
+      <tr>
+        <td><a href="../program/binarytrees-rust-2.html"><span>Rust</span></a>
+        <td>1.20
+        <td>143,452
+        <td>721
+        <td>4.32
+        <td class="message">87%&nbsp;99%&nbsp;87%&nbsp;87%
+      <tbody>
+      <tr>
+        <th colspan="3"><a href="../performance/regexredux.html"><span>regex-redux</span></a>
+        <th colspan="3">
+      <tr>
+        <th>source
+        <th>secs
+        <th>mem
+        <th>gz
+        <th>busy
+        <th>cpu load
+      <tr>
+        <td><a href="../program/regexredux-swift-1.html"><span>Swift</span></a>
+        <td>26.88
+        <td>878,976
+        <td>715
+        <td>52.04
+        <td class="message">18%&nbsp;83%&nbsp;2%&nbsp;91%
+      <tr>
+        <td><a href="../program/regexredux-rust-6.html"><span>Rust</span></a>
+        <td>1.30
+        <td>153,228
+        <td>986
+        <td>1.82
+        <td class="message">12%&nbsp;85%&nbsp;28%&nbsp;15%
+      <tbody>
+      <tr>
+        <td>Swift
+        <td colspan="5" class="message"><p>Swift version 5.2.4 (swift-5.2.4-RELEASE)<br>
+Target: x86_64-unknown-linux-gnu
+
+
+      <tr>
+        <td>Rust
+        <td colspan="5" class="message"><p>rustc 1.46.0 (04488afe3 2020-08-24)<br/>
+LLVM version: 9.0
+
+    </table>
+    <nav>
+      <ul>
+        <li><a href="../measurements/swift.html"><span>all Swift programs & measurements</span></a>
+        <li><a href="../measurements/rust.html"><span>all Rust programs & measurements</span></a>
+      </ul>
+    </nav>
+  </section>
+</article>
+<footer>
+  <nav>
+    <ul>
+      <li><a href="../how-programs-are-measured.html"><span>How programs are measured</span></a>
+    </ul>
+  </nav>
+</footer>
+
+

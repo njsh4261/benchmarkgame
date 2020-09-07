@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,follow,noarchive">
+
+<title>fannkuch-redux Java&nbsp;#2 program | Q6600 Benchmarks Game </title>
+<link href="../program.css" rel = "stylesheet" type = "text/css" >
+<link rel="shortcut icon" href="../favicon.ico">
+<header>
+  <h3><a href="https://benchmarksgame-team.pages.debian.net/benchmarksgame/q6600/">The&nbsp;Q6600<br>Benchmarks&nbsp;Game</a></h3>
+</header>
+<article>
+  <div>
+    <h1>fannkuch-redux Java&nbsp;#2 program</h1>
+    <aside>
+      <p><a href="../description/fannkuchredux.html#fannkuchredux">description</a>
+    </aside>
+  </div>
+  <section>
+    <div>
+      <h2>source code</h2>
+    </div>
+    <pre>
+<span class="com">/* The Computer Language Benchmarks Game</span>
+<span class="com">   https://salsa.debian.org/benchmarksgame-team/benchmarksgame/</span>
+<span class="com"></span>
+<span class="com">   contributed by Isaac Gouy</span>
+<span class="com">   converted to Java by Oleg Mazurov</span>
+<span class="com">*/</span>
+
+<span class="kwa">public class</span> fannkuchredux
+<span class="opt">{</span>
+   <span class="kwa">public static int</span> <span class="kwd">fannkuch</span><span class="opt">(</span><span class="kwa">int</span> n<span class="opt">) {</span>
+      <span class="kwa">int</span><span class="opt">[]</span> perm <span class="opt">=</span> <span class="kwa">new int</span><span class="opt">[</span>n<span class="opt">];</span>
+      <span class="kwa">int</span><span class="opt">[]</span> perm1 <span class="opt">=</span> <span class="kwa">new int</span><span class="opt">[</span>n<span class="opt">];</span>
+      <span class="kwa">int</span><span class="opt">[]</span> count <span class="opt">=</span> <span class="kwa">new int</span><span class="opt">[</span>n<span class="opt">];</span>
+      <span class="kwa">int</span> maxFlipsCount <span class="opt">=</span> <span class="num">0</span><span class="opt">;</span>
+      <span class="kwa">int</span> permCount <span class="opt">=</span> <span class="num">0</span><span class="opt">;</span>
+      <span class="kwa">int</span> checksum <span class="opt">=</span> <span class="num">0</span><span class="opt">;</span>
+
+      <span class="kwa">for</span><span class="opt">(</span><span class="kwa">int</span> i<span class="opt">=</span><span class="num">0</span><span class="opt">;</span> i<span class="opt">&lt;</span>n<span class="opt">;</span> i<span class="opt">++)</span> perm1<span class="opt">[</span>i<span class="opt">] =</span> i<span class="opt">;</span>
+      <span class="kwa">int</span> r <span class="opt">=</span> n<span class="opt">;</span>
+
+      <span class="kwa">while</span> <span class="opt">(</span><span class="kwb">true</span><span class="opt">) {</span>
+
+         <span class="kwa">while</span> <span class="opt">(</span>r <span class="opt">!=</span> <span class="num">1</span><span class="opt">){</span> count<span class="opt">[</span>r<span class="opt">-</span><span class="num">1</span><span class="opt">] =</span> r<span class="opt">;</span> r<span class="opt">--; }</span>
+
+         <span class="kwa">for</span><span class="opt">(</span><span class="kwa">int</span> i<span class="opt">=</span><span class="num">0</span><span class="opt">;</span> i<span class="opt">&lt;</span>n<span class="opt">;</span> i<span class="opt">++)</span> perm<span class="opt">[</span>i<span class="opt">] =</span> perm1<span class="opt">[</span>i<span class="opt">];</span>
+         <span class="kwa">int</span> flipsCount <span class="opt">=</span> <span class="num">0</span><span class="opt">;</span>
+         <span class="kwa">int</span> k<span class="opt">;</span>
+
+         <span class="kwa">while</span> <span class="opt">( !((</span>k<span class="opt">=</span>perm<span class="opt">[</span><span class="num">0</span><span class="opt">]) ==</span> <span class="num">0</span><span class="opt">) ) {</span>
+            <span class="kwa">int</span> k2 <span class="opt">= (</span>k<span class="opt">+</span><span class="num">1</span><span class="opt">) &gt;&gt;</span> <span class="num">1</span><span class="opt">;</span>
+            <span class="kwa">for</span><span class="opt">(</span><span class="kwa">int</span> i<span class="opt">=</span><span class="num">0</span><span class="opt">;</span> i<span class="opt">&lt;</span>k2<span class="opt">;</span> i<span class="opt">++) {</span>
+               <span class="kwa">int</span> temp <span class="opt">=</span> perm<span class="opt">[</span>i<span class="opt">];</span> perm<span class="opt">[</span>i<span class="opt">] =</span> perm<span class="opt">[</span>k<span class="opt">-</span>i<span class="opt">];</span> perm<span class="opt">[</span>k<span class="opt">-</span>i<span class="opt">] =</span> temp<span class="opt">;</span>
+            <span class="opt">}</span>
+            flipsCount<span class="opt">++;</span>
+         <span class="opt">}</span>
+
+         maxFlipsCount <span class="opt">=</span> Math<span class="opt">.</span><span class="kwd">max</span><span class="opt">(</span>maxFlipsCount<span class="opt">,</span> flipsCount<span class="opt">);</span>
+         checksum <span class="opt">+=</span> permCount<span class="opt">%</span><span class="num">2</span> <span class="opt">==</span> <span class="num">0</span> ? flipsCount <span class="opt">: -</span>flipsCount<span class="opt">;</span>
+
+         <span class="slc">// Use incremental change to generate another permutation</span>
+         <span class="kwa">while</span> <span class="opt">(</span><span class="kwb">true</span><span class="opt">) {</span>
+            <span class="kwa">if</span> <span class="opt">(</span>r <span class="opt">==</span> n<span class="opt">) {</span>
+	       System<span class="opt">.</span>out<span class="opt">.</span><span class="kwd">println</span><span class="opt">(</span> checksum <span class="opt">);</span>
+	       <span class="kwa">return</span> maxFlipsCount<span class="opt">;</span>
+	    <span class="opt">}</span>
+            <span class="kwa">int</span> perm0 <span class="opt">=</span> perm1<span class="opt">[</span><span class="num">0</span><span class="opt">];</span>
+            <span class="kwa">int</span> i <span class="opt">=</span> <span class="num">0</span><span class="opt">;</span>
+            <span class="kwa">while</span> <span class="opt">(</span>i <span class="opt">&lt;</span> r<span class="opt">) {</span>
+               <span class="kwa">int</span> j <span class="opt">=</span> i <span class="opt">+</span> <span class="num">1</span><span class="opt">;</span>
+               perm1<span class="opt">[</span>i<span class="opt">] =</span> perm1<span class="opt">[</span>j<span class="opt">];</span>
+               i <span class="opt">=</span> j<span class="opt">;</span>
+            <span class="opt">}</span>
+            perm1<span class="opt">[</span>r<span class="opt">] =</span> perm0<span class="opt">;</span>
+
+            count<span class="opt">[</span>r<span class="opt">] =</span> count<span class="opt">[</span>r<span class="opt">] -</span> <span class="num">1</span><span class="opt">;</span>
+            <span class="kwa">if</span> <span class="opt">(</span>count<span class="opt">[</span>r<span class="opt">] &gt;</span> <span class="num">0</span><span class="opt">)</span> <span class="kwa">break</span><span class="opt">;</span>
+            r<span class="opt">++;</span>
+         <span class="opt">}</span>
+
+         permCount<span class="opt">++;</span>
+      <span class="opt">}</span>
+   <span class="opt">}</span>
+
+   <span class="kwa">public static void</span> <span class="kwd">main</span><span class="opt">(</span>String<span class="opt">[]</span> args<span class="opt">){</span>
+      <span class="kwa">int</span> n <span class="opt">=</span> <span class="num">7</span><span class="opt">;</span>
+      <span class="kwa">if</span> <span class="opt">(</span>args<span class="opt">.</span>length <span class="opt">&gt;</span> <span class="num">0</span><span class="opt">)</span> n <span class="opt">=</span> Integer<span class="opt">.</span><span class="kwd">parseInt</span><span class="opt">(</span>args<span class="opt">[</span><span class="num">0</span><span class="opt">]);</span>
+      System<span class="opt">.</span>out<span class="opt">.</span><span class="kwd">println</span><span class="opt">(</span><span class="str">&quot;Pfannkuchen(&quot;</span><span class="opt">+</span>n<span class="opt">+</span><span class="str">&quot;) = &quot;</span><span class="opt">+</span><span class="kwd">fannkuch</span><span class="opt">(</span>n<span class="opt">));</span>
+   <span class="opt">}</span>
+<span class="opt">}</span>
+    </pre>
+  </section>
+  <section>
+    <div>
+      <h2 id="log">notes, command-line, and program output</h2>
+    </div>
+    <pre>
+NOTES:
+64-bit Ubuntu quad core
+openjdk 14 2020-03-17
+OpenJDK Runtime Environment (build 14+36-1461)
+OpenJDK 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)
+
+
+Tue, 05 May 2020 01:15:56 GMT
+
+MAKE:
+mv fannkuchredux.java-2.java fannkuchredux.java
+/opt/src/openjdk-14/bin/javac -d .  fannkuchredux.java
+
+5.86s to complete and log all make actions
+
+COMMAND LINE:
+/opt/src/openjdk-14/bin/java   fannkuchredux 12
+
+PROGRAM OUTPUT:
+3968050
+Pfannkuchen(12) = 65
+    </pre>
+  </section>
+</article>
+<footer>
+  <nav>
+    <ul>
+      <li><a href="https://salsa.debian.org/benchmarksgame-team/benchmarksgame/blob/master/CONTRIBUTING.md#contribute-source-code-for-measurement"><span>Contribute your own program</span></a>
+      <li><a href="../../license.html"><span>3-Clause BSD License</span></a>
+    </ul>
+  </nav>
+</footer>
+
