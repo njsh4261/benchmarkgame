@@ -29,13 +29,12 @@ fn quicksort(v: &mut Vec::<i32>, begin: usize, end: usize) {
 }
 
 fn main() {
-    // let mut buf = String::new();
-    // io::stdin().read_line(&mut buf);
-    // let num: i32 = match buf.trim().parse::<i32>() {
-    //     Ok(a) => a,
-    //     Err(e) => 0
-    // };
-
-    // println!("{}", num);
-    // io::stdin().read_line(&mut buf);
+    let mut buf = String::new();
+    io::stdin().read_line(&mut buf);
+    let num: i32 = match buf.trim().parse::<i32>() {
+        Ok(a) => a,
+        Err(e) => 0
+    };
+    
+    println!("{}", num);
 }

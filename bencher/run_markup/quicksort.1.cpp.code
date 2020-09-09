@@ -37,19 +37,19 @@ void quicksort(int *array, int begin, int end) {
 int main(int argc, char **argv) {
     // chrono::system_clock::time_point start_time = chrono::system_clock::now();
 
-    // parse input from stdin (problem size)
-    string file_in;
-    getline(cin, file_in);
-    int size = stoi(file_in);
+    // // parse input from stdin (problem size)
+    // string file_in;
+    // getline(cin, file_in);
+    // int size = stoi(file_in);
 
-    // read an array of integer to sort
-    getline(cin, file_in);
-    stringstream ss(file_in);
-    string token;
-    int* int_array = new int[size];
-    for(int i=0; ss >> token; i++){
-        int_array[i] = stoi(token);
-    }
+    // // read an array of integer to sort
+    // getline(cin, file_in);
+    // stringstream ss(file_in);
+    // string token;
+    // int* int_array = new int[size];
+    // for(int i=0; ss >> token; i++){
+    //     int_array[i] = stoi(token);
+    // }
 
     // chrono::system_clock::time_point array_read_done_time = chrono::system_clock::now();
 
@@ -70,7 +70,7 @@ int main(int argc, char **argv) {
     // // }
 
     // // do quicksort
-    quicksort(int_array, 0, size-1);
+    // quicksort(int_array, 0, size-1);
     // chrono::system_clock::time_point quicksort_done_time = chrono::system_clock::now();
 
     // // print elapsed time
@@ -85,5 +85,5 @@ int main(int argc, char **argv) {
     // cout << "Read array from test case: " << rand_array_gen_time.count() << " ms" << endl;
     // cout << "Quicksorting: " << sorting_time.count() << " ms" << endl;
 
-    delete[] int_array;
+    // delete[] int_array;
 }

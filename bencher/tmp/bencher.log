@@ -322,3 +322,65 @@
 2020-09-10 06:22:05,196 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
 2020-09-10 06:22:05,196 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
 2020-09-10 06:22:05,197 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 07:06:53,665 DEBUG ndiff program not found
+2020-09-10 07:06:53,671 DEBUG highlight program not found
+2020-09-10 07:06:53,672 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/quicksort/log
+2020-09-10 07:06:53,673 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/quicksort/dat
+2020-09-10 07:06:53,673 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/quicksort/code
+2020-09-10 07:06:54,291 INFO .OK ....quicksort.java [3]
+2020-09-10 07:06:54,381 WARNING No such file or directory ['./quicksort.rs_run', '0']
+2020-09-10 07:06:54,383 INFO .MAKE ERROR quicksort.rs [2]
+2020-09-10 07:06:54,388 WARNING No such file or directory ['./quicksort.cpp_run', '0']
+2020-09-10 07:06:54,390 INFO .MAKE ERROR quicksort.cpp [1]
+2020-09-10 07:06:54,390 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 07:06:54,391 INFO mkcsv building csv files from quicksort/dat
+2020-09-10 07:06:54,393 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 07:06:54,393 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 07:06:54,395 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 07:08:21,397 DEBUG ndiff program not found
+2020-09-10 07:08:21,403 DEBUG highlight program not found
+2020-09-10 07:08:21,478 WARNING No such file or directory ['./quicksort.rs_run', '0']
+2020-09-10 07:08:21,479 INFO .MAKE ERROR quicksort.rs [1]
+2020-09-10 07:08:21,480 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 07:08:21,480 INFO mkcsv building csv files from quicksort/dat
+2020-09-10 07:08:21,482 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 07:08:21,482 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 07:08:21,483 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 07:08:55,928 DEBUG ndiff program not found
+2020-09-10 07:08:55,933 DEBUG highlight program not found
+2020-09-10 07:08:56,058 WARNING No such file or directory ['./quicksort.rs_run', '0']
+2020-09-10 07:08:56,059 INFO .MAKE ERROR quicksort.rs [1]
+2020-09-10 07:08:56,059 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 07:08:56,060 INFO mkcsv building csv files from quicksort/dat
+2020-09-10 07:08:56,061 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 07:08:56,061 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 07:08:56,062 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 07:10:52,668 DEBUG ndiff program not found
+2020-09-10 07:10:52,675 DEBUG highlight program not found
+2020-09-10 07:10:52,778 WARNING No such file or directory ['./quicksort.rs_run', '0']
+2020-09-10 07:10:52,780 INFO .MAKE ERROR quicksort.rs [1]
+2020-09-10 07:10:52,780 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 07:10:52,781 INFO mkcsv building csv files from quicksort/dat
+2020-09-10 07:10:52,782 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 07:10:52,782 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 07:10:52,783 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 07:11:02,378 DEBUG ndiff program not found
+2020-09-10 07:11:02,384 DEBUG highlight program not found
+2020-09-10 07:11:08,076 INFO .UNEXPECTED OUTPUT quicksort.rs [1]
+2020-09-10 07:11:08,077 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 07:11:08,078 INFO mkcsv building csv files from quicksort/dat
+2020-09-10 07:11:08,080 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 07:11:08,080 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 07:11:08,081 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 07:12:27,252 DEBUG ndiff program not found
+2020-09-10 07:12:27,259 DEBUG highlight program not found
+2020-09-10 07:12:27,260 INFO nothing to be done - measurements are up-to-date
+2020-09-10 07:12:44,291 DEBUG ndiff program not found
+2020-09-10 07:12:44,296 DEBUG highlight program not found
+2020-09-10 07:12:44,297 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/quicksort/log
+2020-09-10 07:12:44,297 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/quicksort/dat
+2020-09-10 07:12:44,297 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/quicksort/code
+2020-09-10 07:13:23,961 DEBUG ndiff program not found
+2020-09-10 07:13:23,965 DEBUG highlight program not found
+2020-09-10 07:14:55,056 DEBUG ndiff program not found
+2020-09-10 07:14:55,062 DEBUG highlight program not found

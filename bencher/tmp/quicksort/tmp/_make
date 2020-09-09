@@ -1,0 +1,35 @@
+
+MAKE:
+rustc -C opt-level=3 quicksort.rs -o quicksort.rs_run
+warning: unused imports: `env::args`, `io`
+ --> quicksort.rs:1:11
+  |
+1 | use std::{io, env::args};
+  |           ^^  ^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: function is never used: `swap`
+ --> quicksort.rs:3:4
+  |
+3 | fn swap(v: &mut Vec::<i32>, index1: usize, index2: usize) {
+  |    ^^^^
+  |
+  = note: `#[warn(dead_code)]` on by default
+
+warning: function is never used: `partition`
+ --> quicksort.rs:9:4
+  |
+9 | fn partition(v: &mut Vec::<i32>, begin: usize, end: usize) -> i32 {
+  |    ^^^^^^^^^
+
+warning: function is never used: `quicksort`
+  --> quicksort.rs:21:4
+   |
+21 | fn quicksort(v: &mut Vec::<i32>, begin: usize, end: usize) {
+   |    ^^^^^^^^^
+
+warning: 4 warnings emitted
+
+
+0.16s to complete and log all make actions

@@ -1,0 +1,16 @@
+
+Wed, 09 Sep 2020 22:06:54 GMT
+
+MAKE:
+mv quicksort.java quicksort.java
+mv: 'quicksort.java' 와 'quicksort.java' 는 같은 파일
+/home/ns/urop/rust/benchmarksgame/bencher/makefiles/my.linux.Makefile:29: recipe for target 'quicksort.java_run' failed
+make: [quicksort.java_run] Error 1 (무시됨)
+javac -d . quicksort.java
+
+0.41s to complete and log all make actions
+
+COMMAND LINE:
+java  -server quicksort 0
+
+PROGRAM OUTPUT:
