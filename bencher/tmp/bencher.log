@@ -31,3 +31,265 @@
 2020-09-10 05:11:29,233 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
 2020-09-10 05:11:29,234 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
 2020-09-10 05:11:29,234 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 05:20:40,367 DEBUG ndiff program not found
+2020-09-10 05:20:40,376 DEBUG highlight program not found
+2020-09-10 05:20:40,376 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci
+2020-09-10 05:20:40,376 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/log
+2020-09-10 05:20:40,377 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/dat
+2020-09-10 05:20:40,377 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/code
+2020-09-10 05:21:13,001 INFO .OK .....fibonacci.java [3]
+2020-09-10 05:21:14,136 INFO .UNEXPECTED OUTPUT fibonacci.rs [2]
+2020-09-10 05:21:18,209 INFO .UNEXPECTED OUTPUT fibonacci.gpp [1]
+2020-09-10 05:21:18,209 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 05:21:18,210 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 05:21:18,210 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 05:21:18,211 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 05:23:25,620 DEBUG ndiff program not found
+2020-09-10 05:23:25,627 DEBUG highlight program not found
+2020-09-10 05:23:25,627 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/nbody
+2020-09-10 05:23:25,628 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/nbody/log
+2020-09-10 05:23:25,628 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/nbody/dat
+2020-09-10 05:23:25,628 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/nbody/code
+2020-09-10 05:23:26,853 INFO .....OK ....nbody.java [8]
+2020-09-10 05:23:29,841 INFO .....OK ....nbody.python-2.python [7]
+2020-09-10 05:23:31,066 INFO .....OK ....nbody.java-5.java [6]
+2020-09-10 05:23:32,313 INFO .....OK ....nbody.java-2.java [5]
+2020-09-10 05:23:32,347 INFO .PROGRAM FAILED nbody.python [4]
+2020-09-10 05:23:32,355 WARNING No such file or directory ['php', '-n', 'nbody.php-3.php', '10000']
+2020-09-10 05:23:32,357 INFO .MAKE ERROR nbody.php-3.php [3]
+2020-09-10 05:23:33,524 INFO .....OK ....nbody.java-4.java [2]
+2020-09-10 05:23:34,728 INFO .....OK ....nbody.java-3.java [1]
+2020-09-10 05:23:34,729 INFO mkcsv building csv files from nbody/dat
+2020-09-10 05:23:34,732 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 05:23:34,732 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 05:23:34,733 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 05:26:08,742 DEBUG ndiff program not found
+2020-09-10 05:26:08,747 DEBUG highlight program not found
+2020-09-10 05:26:08,748 INFO nothing to be done - measurements are up-to-date
+2020-09-10 05:26:48,997 DEBUG ndiff program not found
+2020-09-10 05:26:49,003 DEBUG highlight program not found
+2020-09-10 05:26:49,003 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci
+2020-09-10 05:26:49,004 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/log
+2020-09-10 05:26:49,004 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/dat
+2020-09-10 05:26:49,004 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/code
+2020-09-10 05:27:15,676 INFO .OK ....fibonacci.java [3]
+2020-09-10 05:27:15,955 INFO .UNEXPECTED OUTPUT fibonacci.rs [2]
+2020-09-10 05:27:19,791 INFO .UNEXPECTED OUTPUT fibonacci.gpp [1]
+2020-09-10 05:27:19,791 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 05:27:19,793 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 05:27:19,793 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 05:27:19,793 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 05:28:30,252 DEBUG ndiff program not found
+2020-09-10 05:28:30,256 DEBUG highlight program not found
+2020-09-10 05:28:30,329 WARNING No such file or directory ['./fibonacci.rs_run', '45']
+2020-09-10 05:28:30,331 INFO .MAKE ERROR fibonacci.rs [2]
+2020-09-10 05:28:33,642 INFO .UNEXPECTED OUTPUT fibonacci.gpp [1]
+2020-09-10 05:28:33,643 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 05:28:33,644 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 05:28:33,644 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 05:28:33,645 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 05:29:54,376 DEBUG ndiff program not found
+2020-09-10 05:29:54,381 DEBUG highlight program not found
+2020-09-10 05:29:54,462 WARNING No such file or directory ['./fibonacci.rs_run', '45']
+2020-09-10 05:29:54,463 INFO .MAKE ERROR fibonacci.rs [1]
+2020-09-10 05:29:54,464 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 05:29:54,464 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 05:29:54,465 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 05:29:54,465 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 05:30:12,523 DEBUG ndiff program not found
+2020-09-10 05:30:12,530 DEBUG highlight program not found
+2020-09-10 05:30:17,813 INFO .UNEXPECTED OUTPUT fibonacci.rs [1]
+2020-09-10 05:30:17,814 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 05:30:17,815 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 05:30:17,815 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 05:30:17,816 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 05:31:14,006 DEBUG ndiff program not found
+2020-09-10 05:31:14,011 DEBUG highlight program not found
+2020-09-10 05:31:19,342 INFO .UNEXPECTED OUTPUT fibonacci.java [3]
+2020-09-10 05:31:25,314 INFO .UNEXPECTED OUTPUT fibonacci.rs [2]
+2020-09-10 05:31:28,939 INFO .UNEXPECTED OUTPUT fibonacci.gpp [1]
+2020-09-10 05:31:28,939 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 05:31:28,940 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 05:31:28,940 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 05:31:28,942 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 05:32:43,963 DEBUG ndiff program not found
+2020-09-10 05:32:43,969 DEBUG highlight program not found
+2020-09-10 05:32:49,377 INFO .UNEXPECTED OUTPUT fibonacci.java [3]
+2020-09-10 05:32:54,626 INFO .UNEXPECTED OUTPUT fibonacci.rs [2]
+2020-09-10 05:32:58,270 INFO .UNEXPECTED OUTPUT fibonacci.gpp [1]
+2020-09-10 05:32:58,271 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 05:32:58,272 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 05:32:58,272 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 05:32:58,273 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 05:36:20,759 DEBUG ndiff program not found
+2020-09-10 05:36:20,764 DEBUG highlight program not found
+2020-09-10 05:36:20,969 WARNING No such file or directory ['./fibonacci.gpp_run', '45']
+2020-09-10 05:36:20,970 INFO .MAKE ERROR fibonacci.gpp [1]
+2020-09-10 05:36:20,971 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 05:36:20,972 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 05:36:20,972 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 05:36:20,973 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 05:40:43,442 DEBUG ndiff program not found
+2020-09-10 05:40:43,448 DEBUG highlight program not found
+2020-09-10 05:40:43,450 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/regexdna
+2020-09-10 05:40:43,450 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/regexdna/log
+2020-09-10 05:40:43,450 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/regexdna/dat
+2020-09-10 05:40:43,450 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/regexdna/code
+2020-09-10 05:40:46,989 INFO .UNEXPECTED OUTPUT fibonacci.gpp [2]
+2020-09-10 05:40:46,991 ERROR [Errno 2] No such file or directory: '../regexdna-input10000.txt'
+2020-09-10 05:40:46,992 INFO .EMPTY regexdna.python [1]
+2020-09-10 05:40:46,992 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 05:40:46,993 INFO mkcsv building csv files from regexdna/dat
+2020-09-10 05:40:46,993 ERROR list index out of range
+2020-09-10 05:40:46,994 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 05:40:46,994 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 05:40:46,995 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 05:42:53,461 DEBUG ndiff program not found
+2020-09-10 05:42:53,467 DEBUG highlight program not found
+2020-09-10 05:42:53,468 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/nbody
+2020-09-10 05:42:53,469 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/nbody/log
+2020-09-10 05:42:53,469 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/nbody/dat
+2020-09-10 05:42:53,469 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/nbody/code
+2020-09-10 05:42:56,416 INFO .....OK ....nbody.python-2.python [8]
+2020-09-10 05:42:57,625 INFO .....OK ....nbody.java-5.java [7]
+2020-09-10 05:42:58,767 INFO .....OK ....nbody.java [6]
+2020-09-10 05:42:59,994 INFO .....OK ....nbody.java-2.java [5]
+2020-09-10 05:43:00,000 WARNING No such file or directory ['php', '-n', 'nbody.php-3.php', '10000']
+2020-09-10 05:43:00,003 INFO .MAKE ERROR nbody.php-3.php [4]
+2020-09-10 05:43:01,313 INFO .....OK ....nbody.java-3.java [3]
+2020-09-10 05:43:02,536 INFO .....OK ....nbody.java-4.java [2]
+2020-09-10 05:43:02,566 INFO .PROGRAM FAILED nbody.python [1]
+2020-09-10 05:43:02,566 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 05:43:02,567 INFO mkcsv building csv files from nbody/dat
+2020-09-10 05:43:02,568 INFO mkcsv building csv files from regexdna/dat
+2020-09-10 05:43:02,568 ERROR list index out of range
+2020-09-10 05:43:02,569 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 05:43:02,569 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 05:43:02,571 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 05:45:20,766 DEBUG ndiff program not found
+2020-09-10 05:45:20,770 DEBUG highlight program not found
+2020-09-10 05:45:20,771 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci
+2020-09-10 05:45:20,771 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/log
+2020-09-10 05:45:20,771 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/dat
+2020-09-10 05:45:20,771 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/code
+2020-09-10 05:45:48,274 INFO .OK ....fibonacci.java [3]
+2020-09-10 05:46:16,722 INFO .OK ....fibonacci.rs [2]
+2020-09-10 05:46:35,773 INFO .OK ....fibonacci.gpp [1]
+2020-09-10 05:46:35,773 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 05:46:35,774 INFO mkcsv building csv files from nbody/dat
+2020-09-10 05:46:35,775 INFO mkcsv building csv files from regexdna/dat
+2020-09-10 05:46:35,776 ERROR list index out of range
+2020-09-10 05:46:35,776 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 05:46:35,776 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 05:46:35,778 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 05:47:22,184 DEBUG ndiff program not found
+2020-09-10 05:47:22,190 DEBUG highlight program not found
+2020-09-10 05:47:22,190 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci
+2020-09-10 05:47:22,191 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/log
+2020-09-10 05:47:22,191 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/dat
+2020-09-10 05:47:22,191 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/code
+2020-09-10 05:47:49,009 INFO .OK ....fibonacci.java [3]
+2020-09-10 05:48:17,393 INFO .OK ....fibonacci.rs [2]
+2020-09-10 05:48:21,337 INFO .UNEXPECTED OUTPUT fibonacci.gpp [1]
+2020-09-10 05:48:21,338 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 05:48:21,338 INFO mkcsv building csv files from nbody/dat
+2020-09-10 05:48:21,340 INFO mkcsv building csv files from regexdna/dat
+2020-09-10 05:48:21,340 ERROR list index out of range
+2020-09-10 05:48:21,341 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 05:48:21,341 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 05:48:21,342 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 06:01:07,569 DEBUG ndiff program not found
+2020-09-10 06:01:07,574 DEBUG highlight program not found
+2020-09-10 06:01:07,574 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci
+2020-09-10 06:01:07,575 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/log
+2020-09-10 06:01:07,575 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/dat
+2020-09-10 06:01:07,575 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/code
+2020-09-10 06:01:08,351 INFO .OK ....fibonacci.java [3]
+2020-09-10 06:01:08,431 WARNING No such file or directory ['./fibonacci.rs_run', '20']
+2020-09-10 06:01:08,432 INFO .MAKE ERROR fibonacci.rs [2]
+2020-09-10 06:01:08,728 INFO .UNEXPECTED OUTPUT fibonacci.gpp [1]
+2020-09-10 06:01:08,729 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 06:01:08,729 INFO mkcsv building csv files from nbody/dat
+2020-09-10 06:01:08,731 INFO mkcsv building csv files from regexdna/dat
+2020-09-10 06:01:08,731 ERROR list index out of range
+2020-09-10 06:01:08,731 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 06:01:08,732 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 06:01:08,733 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 06:01:42,396 DEBUG ndiff program not found
+2020-09-10 06:01:42,403 DEBUG highlight program not found
+2020-09-10 06:01:42,480 WARNING No such file or directory ['./fibonacci.rs_run', '20']
+2020-09-10 06:01:42,482 INFO .MAKE ERROR fibonacci.rs [1]
+2020-09-10 06:01:42,482 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 06:01:42,482 INFO mkcsv building csv files from nbody/dat
+2020-09-10 06:01:42,484 INFO mkcsv building csv files from regexdna/dat
+2020-09-10 06:01:42,484 ERROR list index out of range
+2020-09-10 06:01:42,484 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 06:01:42,485 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 06:01:42,486 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 06:02:22,127 DEBUG ndiff program not found
+2020-09-10 06:02:22,132 DEBUG highlight program not found
+2020-09-10 06:02:22,419 INFO .UNEXPECTED OUTPUT fibonacci.rs [1]
+2020-09-10 06:02:22,420 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 06:02:22,420 INFO mkcsv building csv files from nbody/dat
+2020-09-10 06:02:22,422 INFO mkcsv building csv files from regexdna/dat
+2020-09-10 06:02:22,422 ERROR list index out of range
+2020-09-10 06:02:22,422 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 06:02:22,422 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 06:02:22,424 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 06:07:05,435 DEBUG ndiff program not found
+2020-09-10 06:07:05,442 DEBUG highlight program not found
+2020-09-10 06:07:05,443 INFO nothing to be done - measurements are up-to-date
+2020-09-10 06:07:17,826 DEBUG ndiff program not found
+2020-09-10 06:07:17,832 DEBUG highlight program not found
+2020-09-10 06:07:17,832 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci
+2020-09-10 06:07:17,832 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/log
+2020-09-10 06:07:17,832 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/dat
+2020-09-10 06:07:17,832 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/code
+2020-09-10 06:07:18,303 INFO .OK fibonacci.java [3]
+2020-09-10 06:07:18,621 INFO .UNEXPECTED OUTPUT fibonacci.rs [2]
+2020-09-10 06:07:18,892 INFO .OK fibonacci.gpp [1]
+2020-09-10 06:07:18,892 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 06:07:18,893 INFO mkcsv building csv files from nbody/dat
+2020-09-10 06:07:18,895 INFO mkcsv building csv files from regexdna/dat
+2020-09-10 06:07:18,895 ERROR list index out of range
+2020-09-10 06:07:18,896 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 06:07:18,896 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 06:07:18,898 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 06:07:58,239 DEBUG ndiff program not found
+2020-09-10 06:07:58,245 DEBUG highlight program not found
+2020-09-10 06:07:58,245 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci
+2020-09-10 06:07:58,245 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/log
+2020-09-10 06:07:58,246 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/dat
+2020-09-10 06:07:58,246 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/code
+2020-09-10 06:07:58,742 INFO .OK fibonacci.java [3]
+2020-09-10 06:07:59,054 INFO .OK fibonacci.rs [2]
+2020-09-10 06:07:59,328 INFO .OK fibonacci.gpp [1]
+2020-09-10 06:07:59,329 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 06:07:59,329 INFO mkcsv building csv files from nbody/dat
+2020-09-10 06:07:59,330 INFO mkcsv building csv files from regexdna/dat
+2020-09-10 06:07:59,331 ERROR list index out of range
+2020-09-10 06:07:59,331 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 06:07:59,331 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 06:07:59,333 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 06:09:09,465 DEBUG ndiff program not found
+2020-09-10 06:09:09,469 DEBUG highlight program not found
+2020-09-10 06:09:09,470 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci
+2020-09-10 06:09:09,470 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/log
+2020-09-10 06:09:09,470 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/dat
+2020-09-10 06:09:09,470 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/code
+2020-09-10 06:09:09,992 INFO .OK .fibonacci.java [3]
+2020-09-10 06:09:10,275 INFO .UNEXPECTED OUTPUT fibonacci.rs [2]
+2020-09-10 06:09:10,544 INFO .UNEXPECTED OUTPUT fibonacci.gpp [1]
+2020-09-10 06:09:10,545 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 06:09:10,546 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 06:09:10,546 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 06:09:10,547 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 06:13:36,203 DEBUG ndiff program not found
+2020-09-10 06:13:36,210 DEBUG highlight program not found
+2020-09-10 06:14:01,814 INFO .OK ....fibonacci.java [3]
+2020-09-10 06:14:29,657 INFO .OK ....fibonacci.rs [2]
+2020-09-10 06:14:47,690 INFO .OK ....fibonacci.gpp [1]
+2020-09-10 06:14:47,690 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 06:14:47,692 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 06:14:47,692 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 06:14:47,693 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs

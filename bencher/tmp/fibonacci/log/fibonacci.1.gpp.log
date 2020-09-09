@@ -1,23 +1,15 @@
 
-Wed, 09 Sep 2020 20:11:25 GMT
+Wed, 09 Sep 2020 21:14:29 GMT
 
 MAKE:
 g++ -c -pipe -O3 -fomit-frame-pointer  fibonacci.cpp -o fibonacci.cpp.o &&  \
         g++ fibonacci.cpp.o -o fibonacci.gpp_run  
 rm fibonacci.cpp
 
-0.26s to complete and log all make actions
+0.23s to complete and log all make actions
 
 COMMAND LINE:
 ./fibonacci.gpp_run 45
 
-UNEXPECTED OUTPUT 
-
-2c2
-< running time: 3548 ms
----
-> running time: 5004 ms
-
 PROGRAM OUTPUT:
 45th fibonacci number: 1134903170
-running time: 3548 ms

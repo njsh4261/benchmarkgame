@@ -1,31 +1,13 @@
 
-Wed, 09 Sep 2020 20:11:19 GMT
+Wed, 09 Sep 2020 21:14:02 GMT
 
 MAKE:
 rustc -C opt-level=3 fibonacci.rs -o fibonacci.rs_run
-warning: unused import: `io`
- --> fibonacci.rs:1:11
-  |
-1 | use std::{io, time::Instant, env::args};
-  |           ^^
-  |
-  = note: `#[warn(unused_imports)]` on by default
 
-warning: 1 warning emitted
-
-
-0.73s to complete and log all make actions
+0.27s to complete and log all make actions
 
 COMMAND LINE:
 ./fibonacci.rs_run 45
 
-UNEXPECTED OUTPUT 
-
-2c2
-< running time: 5736 ms
----
-> running time: 5004 ms
-
 PROGRAM OUTPUT:
 45th fibonacci number: 1134903170
-running time: 5736 ms

@@ -1,5 +1,5 @@
 
-Wed, 09 Sep 2020 20:10:47 GMT
+Wed, 09 Sep 2020 21:13:36 GMT
 
 MAKE:
 mv fibonacci.java fibonacci.java
@@ -8,11 +8,10 @@ mv: 'fibonacci.java' 와 'fibonacci.java' 는 같은 파일
 make: [fibonacci.java_run] Error 1 (무시됨)
 javac -d . fibonacci.java
 
-0.40s to complete and log all make actions
+0.38s to complete and log all make actions
 
 COMMAND LINE:
 java  -server fibonacci 45
 
 PROGRAM OUTPUT:
 45th fibonacci number: 1134903170
-running time: 5004 ms
