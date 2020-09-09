@@ -50,10 +50,10 @@ COPTS := -O3 -fomit-frame-pointer
 # gpp
 ########################################
 
-%.c++: %.gpp 
+%.cpp: %.gpp 
 	-@mv $< $@
 
-%.gpp_run: %.c++
+%.gpp_run: %.cpp
 	-$(GXX) -c -pipe $(COPTS) $(GXXOPTS) $< -o $<.o &&  \
         $(GXX) $<.o -o $@ $(GXXLDOPTS) 
 
@@ -61,4 +61,5 @@ COPTS := -O3 -fomit-frame-pointer
 # rust
 ########################################
 
-
+%.rs_run: %.rs
+	-rustc -C opt-level=3 $< =o $@
