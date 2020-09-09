@@ -22,7 +22,7 @@ public final class fibonacci {
         int result = fib(num);
         long endTime = System.currentTimeMillis();
 
-        System.out.println(num + "th fibonacci number: " + result);
+        // System.out.println(num + "th fibonacci number: " + result);
         System.out.println("running time: " + (endTime - startTime) + " ms");
     }
 }

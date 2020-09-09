@@ -1,4 +1,4 @@
-use std::{io, time::Instant, env::args};
+use std::{time::Instant, env::args};
 
 fn fib(num: i32) -> i32 {
     if num == 0 {
@@ -38,7 +38,7 @@ fn main() {
     let result: i32 = fib(num);
     let elapsed = start_time.elapsed();
 
-    println!("{}th fibonacci number: {}", num, result);
+    // println!("{}th fibonacci number: {}", num, result);
     println!("running time: {} ms", elapsed.as_millis());
 
 }

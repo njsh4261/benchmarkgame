@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
     chrono::system_clock::time_point end_time = chrono::system_clock::now();
     chrono::milliseconds fib_time = chrono::duration_cast<std::chrono::milliseconds>(end_time - start_time);
 
-    cout << num << "th fibonacci number: " << result << endl;
+    // cout << num << "th fibonacci number: " << result << endl;
     cout << "running time: " << fib_time.count() << " ms" << endl;
 
     return 0;
