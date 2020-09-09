@@ -1,21 +1,41 @@
-use std::env::args;
+use std::{io, env::args};
 
-static BIG_NUMBER: i32 = 50_000_000;
-
-fn swap() {
-
+fn swap(v: &mut Vec::<i32>, index1: usize, index2: usize) {
+    let temp = v[index1];
+    v[index1] = v[index2];
+    v[index2] = temp;
 }
 
-fn partition(array: &mut [i32], begin: i32, end: i32) {
-    
+fn partition(v: &mut Vec::<i32>, begin: usize, end: usize) -> i32 {
+    let mut smaller_end = begin;
+    for larger_end in begin..end {
+        if v[larger_end] <= v[end] {
+            swap(v, smaller_end, larger_end);
+            smaller_end += 1;
+        }
+    }
+    swap(v, smaller_end, end);
+    return smaller_end as i32;
 }
 
-fn quicksort(array: &mut [i32], start: i32, end: i32) {
-
+fn quicksort(v: &mut Vec::<i32>, begin: usize, end: usize) {
+    if begin < end {
+        let split = partition(v, begin, end);
+        if split > 0 {
+            quicksort(v, begin, (split-1) as usize);
+        }
+        quicksort(v, (split+1) as usize, end);
+    }
 }
 
 fn main() {
     let size = 5;
     let mut int_array: [i32; a] = [1,2,3,4,5];
 
+    let mut buf = String::new();
+    io::stdin().read_line(buf);
+    let num: i32 = match buf.trim().parse().unwrap()
+        .expect("Error occured while reading from standard input");
+    
+    println!("{}", num);
 }
