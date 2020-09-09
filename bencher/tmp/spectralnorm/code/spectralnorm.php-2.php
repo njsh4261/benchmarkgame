@@ -1,1 +1,0 @@
-/home/dunham/bencher/programs/spectralnorm/spectralnorm.php-2.php

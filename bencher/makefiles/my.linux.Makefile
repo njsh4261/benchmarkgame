@@ -62,4 +62,4 @@ COPTS := -O3 -fomit-frame-pointer
 ########################################
 
 %.rs_run: %.rs
-	-rustc -C opt-level=3 $< =o $@
+	-rustc -C opt-level=3 $< -o $@
