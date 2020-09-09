@@ -1,13 +1,13 @@
 
-Wed, 09 Sep 2020 21:14:02 GMT
+Wed, 09 Sep 2020 21:20:50 GMT
 
 MAKE:
 rustc -C opt-level=3 fibonacci.rs -o fibonacci.rs_run
 
-0.27s to complete and log all make actions
+0.26s to complete and log all make actions
 
 COMMAND LINE:
-./fibonacci.rs_run 45
+./fibonacci.rs_run 46
 
 PROGRAM OUTPUT:
-45th fibonacci number: 1134903170
+46th fibonacci number: 1836311903

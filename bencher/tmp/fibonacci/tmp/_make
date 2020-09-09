@@ -4,4 +4,4 @@ g++ -c -pipe -O3 -fomit-frame-pointer  fibonacci.cpp -o fibonacci.cpp.o &&  \
         g++ fibonacci.cpp.o -o fibonacci.gpp_run  
 rm fibonacci.cpp
 
-0.23s to complete and log all make actions
+0.24s to complete and log all make actions

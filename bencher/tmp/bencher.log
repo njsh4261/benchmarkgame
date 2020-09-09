@@ -293,3 +293,32 @@
 2020-09-10 06:14:47,692 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
 2020-09-10 06:14:47,692 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
 2020-09-10 06:14:47,693 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 06:17:59,964 DEBUG ndiff program not found
+2020-09-10 06:17:59,971 DEBUG highlight program not found
+2020-09-10 06:17:59,973 INFO nothing to be done - measurements are up-to-date
+2020-09-10 06:18:11,687 DEBUG ndiff program not found
+2020-09-10 06:18:11,693 DEBUG highlight program not found
+2020-09-10 06:18:11,694 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci
+2020-09-10 06:18:11,694 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/log
+2020-09-10 06:18:11,694 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/dat
+2020-09-10 06:18:11,694 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/code
+2020-09-10 06:18:12,434 INFO ...OK ....fibonacci.java [3]
+2020-09-10 06:18:12,759 INFO ...OK ....fibonacci.rs [2]
+2020-09-10 06:18:13,126 INFO ...OK ....fibonacci.gpp [1]
+2020-09-10 06:18:13,126 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 06:18:13,129 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 06:18:13,129 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 06:18:13,130 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 06:20:07,308 DEBUG ndiff program not found
+2020-09-10 06:20:07,313 DEBUG highlight program not found
+2020-09-10 06:20:07,314 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci
+2020-09-10 06:20:07,314 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/log
+2020-09-10 06:20:07,314 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/dat
+2020-09-10 06:20:07,314 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/code
+2020-09-10 06:20:50,150 INFO .OK ....fibonacci.java [3]
+2020-09-10 06:21:35,288 INFO .OK ....fibonacci.rs [2]
+2020-09-10 06:22:05,194 INFO .OK ....fibonacci.gpp [1]
+2020-09-10 06:22:05,194 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 06:22:05,196 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 06:22:05,196 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
+2020-09-10 06:22:05,197 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
