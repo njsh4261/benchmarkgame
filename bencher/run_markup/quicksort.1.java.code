@@ -1,4 +1,8 @@
-import java.util.Random;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.stream.*;
 
 public final class quicksort {
     public final static int BIG_NUMBER = 50_000_000;
@@ -29,19 +33,32 @@ public final class quicksort {
     }
 
     public static void main(String[] args) {
+        try {
+            BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+            int size = Integer.parseInt(bf.readLine());
+
+            int[] intArray = Arrays.stream(bf.readLine().split(" "))
+                .map(String::trim).mapToInt(Integer::parseInt).toArray();
+
+            quickSort(intArray, 0, size-1);
+
+            // for(int i=0; i<size; i++){
+            //     System.out.print(intArray[i]+" ");
+            // }
+            // System.out.println();
+        } catch (IOException e) {
+            System.out.println("IOException occured");
+            System.exit(0);
+        }
+
         // long startTime = System.currentTimeMillis();
         
-        // // parse user input (problem size)
+        // parse user input (problem size)
         // int size;
-        // if(args.length <=0){
+        // try {
+        //     size = Integer.parseInt(args[0]);
+        // } catch (NumberFormatException e) {
         //     size = BIG_NUMBER;
-        // }
-        // else {
-        //     try {
-        //         size = Integer.parseInt(args[0]);
-        //     } catch (NumberFormatException e) {
-        //         size = BIG_NUMBER;
-        //     }
         // }
 
         // // generate an array of integer to sort
@@ -59,7 +76,7 @@ public final class quicksort {
         // // print elapsed time
         // long randArrayGenTime = arrayGenDoneTime - startTime;
         // long sortingTime = quicksortDoneTime - arrayGenDoneTime;
-
+        
         // System.out.println("Generate random array: " + randArrayGenTime + " ms");
         // System.out.println("Quicksorting: " + sortingTime + " ms");
     }

@@ -1,5 +1,5 @@
 
-Wed, 09 Sep 2020 22:06:54 GMT
+Wed, 09 Sep 2020 22:53:53 GMT
 
 MAKE:
 mv quicksort.java quicksort.java
@@ -8,9 +8,9 @@ mv: 'quicksort.java' 와 'quicksort.java' 는 같은 파일
 make: [quicksort.java_run] Error 1 (무시됨)
 javac -d . quicksort.java
 
-0.41s to complete and log all make actions
+0.47s to complete and log all make actions
 
 COMMAND LINE:
-java  -server quicksort 0
+java  -server quicksort 0 < quicksort-input1000000.txt
 
 PROGRAM OUTPUT:
