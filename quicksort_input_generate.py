@@ -1,5 +1,6 @@
 import random
 import os.path
+import sys
 
 def array_generate(filename, size):
     new_file = open(os.path.join(os.getcwd(), "bencher/tmp/quicksort", filename), 'w')
@@ -12,6 +13,12 @@ def array_generate(filename, size):
 
     new_file.close()
 
-SIZE = 20000000
-FILENAME = "quicksort-input%d.txt" % SIZE
-array_generate(FILENAME, SIZE)
+def main():
+    if len(sys.argv) != 2:
+        print("usage: python quicksort_input_generate.py [array_size]")
+    else:
+        size = int(sys.argv[1])
+        array_generate("quicksort-input%d.txt" % size, size)
+
+if __name__ == "__main__":
+    main()

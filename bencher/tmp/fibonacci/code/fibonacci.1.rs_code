@@ -1,1 +1,0 @@
-/home/ns/urop/rust/benchmarksgame/bencher/programs/fibonacci/fibonacci.rs
