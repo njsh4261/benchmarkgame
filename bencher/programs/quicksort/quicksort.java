@@ -1,11 +1,12 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
+import java.util.Vector;
 import java.util.Arrays;
 import java.util.stream.*;
 
 public final class quicksort {
-    public final static int BIG_NUMBER = 50_000_000;
+    // public final static int BIG_NUMBER = 50_000_000;
 
     private final static void swap(int[] array, int index1, int index2) {
         int temp = array[index1];
@@ -36,9 +37,10 @@ public final class quicksort {
         try {
             BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
             int size = Integer.parseInt(bf.readLine());
-
             int[] intArray = Arrays.stream(bf.readLine().split(" "))
-                .map(String::trim).mapToInt(Integer::parseInt).toArray();
+                .mapToInt(Integer::parseInt).toArray();
+            // Arrays.asList(intArray);
+            // Vector<Integer> intVec = new Vector<Integer>();
 
             quickSort(intArray, 0, size-1);
 

@@ -1,4 +1,4 @@
-use std::{io, env::args};
+use std::io;
 
 fn swap(v: &mut Vec::<i32>, index1: usize, index2: usize) {
     let temp = v[index1];
@@ -29,13 +29,17 @@ fn quicksort(v: &mut Vec::<i32>, begin: usize, end: usize) {
 }
 
 fn main() {
-    let mut buf = String::new();
-    io::stdin().read_line(&mut buf);
-    let num: i32 = match buf.trim().parse::<i32>() {
+    let mut num_buf = String::new();
+    io::stdin().read_line(&mut num_buf).ok();
+    let num: usize = match num_buf.trim().parse::<usize>() {
         Ok(a) => a,
-        Err(e) => 0
+        Err(_) => 0
     };
 
-    // println!("{}", num);
-    io::stdin().read_line(&mut buf);
+    let mut vec_buf = String::new();
+    io::stdin().read_line(&mut vec_buf).ok();
+    let mut int_vec: Vec<i32> = vec_buf.split_whitespace()
+        .map(|s| s.parse().expect("parse error")).collect();
+    
+    quicksort(&mut int_vec, 0, num-1);
 }
