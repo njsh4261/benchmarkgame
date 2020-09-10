@@ -1,0 +1,16 @@
+
+Thu, 10 Sep 2020 11:10:25 GMT
+
+MAKE:
+mv floydwarshall.java floydwarshall.java
+mv: 'floydwarshall.java' 와 'floydwarshall.java' 는 같은 파일
+/home/ns/urop/rust/benchmarksgame/bencher/makefiles/my.linux.Makefile:29: recipe for target 'floydwarshall.java_run' failed
+make: [floydwarshall.java_run] Error 1 (무시됨)
+javac -d . floydwarshall.java
+
+0.45s to complete and log all make actions
+
+COMMAND LINE:
+java  -server floydwarshall 0 < floydwarshall-input2000.txt
+
+PROGRAM OUTPUT:

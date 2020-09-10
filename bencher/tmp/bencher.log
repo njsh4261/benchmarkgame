@@ -527,3 +527,51 @@
 2020-09-10 07:53:55,600 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
 2020-09-10 07:53:55,600 INFO copy *.code files to /home/ns/urop/rust/benchmarksgame/bencher/run_markup
 2020-09-10 07:53:55,601 INFO copy *.log files to /home/ns/urop/rust/benchmarksgame/bencher/run_logs
+2020-09-10 20:01:39,913 DEBUG ndiff program not found
+2020-09-10 20:01:39,922 DEBUG highlight program not found
+2020-09-10 20:01:39,922 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci
+2020-09-10 20:01:39,922 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/log
+2020-09-10 20:01:39,922 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/dat
+2020-09-10 20:01:39,923 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/fibonacci/code
+2020-09-10 20:01:39,924 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/floydwarshall/log
+2020-09-10 20:01:39,924 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/floydwarshall/dat
+2020-09-10 20:01:39,924 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/floydwarshall/code
+2020-09-10 20:01:39,925 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/quicksort/log
+2020-09-10 20:01:39,926 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/quicksort/dat
+2020-09-10 20:01:39,926 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/quicksort/code
+2020-09-10 20:04:03,062 INFO ...OK ............fibonacci.java [9]
+2020-09-10 20:06:38,953 INFO ...OK ............fibonacci.rs [8]
+2020-09-10 20:08:18,857 INFO ...OK ............fibonacci.gpp [7]
+2020-09-10 20:08:19,230 ERROR [Errno 2] No such file or directory: '../floydwarshall-input500.txt'
+2020-09-10 20:10:12,543 INFO ....OK ............floydwarshall.rs [6]
+2020-09-10 20:10:12,999 ERROR [Errno 2] No such file or directory: '../floydwarshall-input500.txt'
+2020-09-10 20:13:12,143 INFO ....OK ............floydwarshall.java [5]
+2020-09-10 20:13:12,434 ERROR [Errno 2] No such file or directory: '../floydwarshall-input500.txt'
+2020-09-10 20:14:08,786 INFO ....OK ............floydwarshall.gpp [4]
+2020-09-10 20:14:08,908 WARNING No such file or directory ['./quicksort.rs_run', '0']
+2020-09-10 20:14:08,910 INFO .MAKE ERROR quicksort.rs [3]
+2020-09-10 20:14:54,599 INFO .OK ....quicksort.gpp [2]
+2020-09-10 20:15:43,854 INFO .OK ....quicksort.java [1]
+2020-09-10 20:15:43,855 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 20:15:43,857 INFO mkcsv building csv files from floydwarshall/dat
+2020-09-10 20:15:43,858 INFO mkcsv building csv files from quicksort/dat
+2020-09-10 20:15:43,860 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 20:16:30,906 DEBUG ndiff program not found
+2020-09-10 20:16:30,913 DEBUG highlight program not found
+2020-09-10 20:16:57,235 INFO .OK ....quicksort.rs [1]
+2020-09-10 20:16:57,235 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 20:16:57,237 INFO mkcsv building csv files from floydwarshall/dat
+2020-09-10 20:16:57,238 INFO mkcsv building csv files from quicksort/dat
+2020-09-10 20:16:57,239 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary
+2020-09-10 20:28:18,667 DEBUG ndiff program not found
+2020-09-10 20:28:18,674 DEBUG highlight program not found
+2020-09-10 20:28:18,676 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/quicksort/log
+2020-09-10 20:28:18,676 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/quicksort/dat
+2020-09-10 20:28:18,676 DEBUG mkdir /home/ns/urop/rust/benchmarksgame/bencher/tmp/quicksort/code
+2020-09-10 20:28:44,584 INFO .OK ....quicksort.gpp [3]
+2020-09-10 20:29:02,642 INFO .OK ....quicksort.rs [2]
+2020-09-10 20:29:33,209 INFO .OK ....quicksort.java [1]
+2020-09-10 20:29:33,209 INFO mkcsv building csv files from fibonacci/dat
+2020-09-10 20:29:33,210 INFO mkcsv building csv files from floydwarshall/dat
+2020-09-10 20:29:33,211 INFO mkcsv building csv files from quicksort/dat
+2020-09-10 20:29:33,212 INFO copy *.csv files to /home/ns/urop/rust/benchmarksgame/bencher/summary

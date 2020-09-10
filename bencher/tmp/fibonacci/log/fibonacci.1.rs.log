@@ -1,0 +1,13 @@
+
+Thu, 10 Sep 2020 11:04:18 GMT
+
+MAKE:
+rustc -C opt-level=3 fibonacci.rs -o fibonacci.rs_run
+
+0.25s to complete and log all make actions
+
+COMMAND LINE:
+./fibonacci.rs_run 47
+
+PROGRAM OUTPUT:
+47th fibonacci number: -1323752223

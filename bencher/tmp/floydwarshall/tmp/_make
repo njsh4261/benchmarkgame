@@ -1,0 +1,7 @@
+
+MAKE:
+g++ -c -pipe -O3 -fomit-frame-pointer  floydwarshall.cpp -o floydwarshall.cpp.o &&  \
+        g++ floydwarshall.cpp.o -o floydwarshall.gpp_run  
+rm floydwarshall.cpp
+
+0.29s to complete and log all make actions

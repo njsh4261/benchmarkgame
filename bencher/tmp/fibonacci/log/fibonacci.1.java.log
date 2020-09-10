@@ -1,0 +1,17 @@
+
+Thu, 10 Sep 2020 11:01:53 GMT
+
+MAKE:
+mv fibonacci.java fibonacci.java
+mv: 'fibonacci.java' 와 'fibonacci.java' 는 같은 파일
+/home/ns/urop/rust/benchmarksgame/bencher/makefiles/my.linux.Makefile:29: recipe for target 'fibonacci.java_run' failed
+make: [fibonacci.java_run] Error 1 (무시됨)
+javac -d . fibonacci.java
+
+0.42s to complete and log all make actions
+
+COMMAND LINE:
+java  -server fibonacci 47
+
+PROGRAM OUTPUT:
+47th fibonacci number: -1323752223
