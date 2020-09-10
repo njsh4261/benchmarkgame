@@ -42,14 +42,6 @@ public final class floydwarshall {
 
     public final static void main(String[] args) {
         readInput();
-        // for(int i=0; i<10; i++){
-        //     System.out.println(graph[0][i]);
-        // }
-        // System.out.println();
         fw();
-        
-        // for(int i=0; i<10; i++){
-        //     System.out.println(graph[0][i]);
-        // }
     }
 }

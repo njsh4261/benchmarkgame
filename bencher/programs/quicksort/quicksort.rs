@@ -30,8 +30,6 @@ fn quicksort(v: &mut Vec::<i32>, begin: usize, end: usize) {
 }
 
 fn main() {
-    let start = Instant::now();
-
     let mut num_buf = String::new();
     io::stdin().read_line(&mut num_buf).ok();
     let num: usize = match num_buf.trim().parse::<usize>() {
@@ -48,14 +46,4 @@ fn main() {
     let start2 = Instant::now();
 
     quicksort(&mut int_vec, 0, num-1);
-
-    // for v in int_vec {
-    //     print!("{} ", v);
-    // }
-    // println!();
-    
-    let sort_done_time = start2.elapsed();
-    println!("Generate random array: {} ms", array_read_done_time.as_millis());
-    println!("Quicksorting: {} ms", sort_done_time.as_millis());
-
 }

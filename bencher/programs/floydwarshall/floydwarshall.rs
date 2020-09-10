@@ -31,9 +31,5 @@ fn main() {
     }
 
     floydwarshall(&mut graph, vertex_num);
-
-    // for i in 0..10 {
-    //     print!("{} ", graph[0][i]);
-    // }
-    println!();
+    
 }
